@@ -1,5 +1,6 @@
 # File custom.h
-```
+
+```cpp
 // File custom.h
 
 #ifndef _CUSTOM_H_
@@ -22,7 +23,8 @@ void DrawEx1(HWND p_hWnd);
 ```
 
 # File main.cpp
-```
+
+```cpp
 // File main.cpp
 
 // Определяем манифест, для использования стилей элементов определённых в ОС.
@@ -189,7 +191,8 @@ LRESULT CALLBACK WndProc(HWND p_hWnd, UINT p_message, WPARAM p_wParam, LPARAM p_
 ```
 
 # File custom.cpp
-```
+
+```cpp
 // File custom.cpp
 
 #include "custom.h"
