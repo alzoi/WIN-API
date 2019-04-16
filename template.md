@@ -9,9 +9,6 @@
 #include <windows.h>
 
 // Объявление прототипов функций.
-// Оконная функции для получения сообщений,
-// ОС передаёт сообщения из очереди обработки именно в эту функцию обратного вызова.
-LRESULT CALLBACK WndProc(HWND, UINT, WPARAM, LPARAM);
 void DrawEx(HWND p_hWnd);
 void DrawEx1(HWND p_hWnd);
 
@@ -32,12 +29,25 @@ void DrawEx1(HWND p_hWnd);
 name='Microsoft.Windows.Common-Controls' version='6.0.0.0' \
 processorArchitecture='*' publicKeyToken='6595b64144ccf1df' language='*'\"") 
 
+// Исключите редко используемые компоненты из заголовков Windows.
+#define WIN32_LEAN_AND_MEAN
+// Файлы заголовков Windows.
 #include <windows.h>
+//
 #include "custom.h"
 
-// Определение глобальных переменных:
+// Объявления функций:
+// Регистрация класса главного окна.
+ATOM RegisterMainClass(HINSTANCE p_instance);
+// Создать главное окно.
+HWND CreateMainWindow(HINSTANCE p_instance, int p_mode);
+// Оконная функции для получения сообщений, ОС передаёт сообщения из очереди обработки
+// именно в эту функцию обратного вызова.
+LRESULT CALLBACK WndMainProc(HWND, UINT, WPARAM, LPARAM);
+
+// Глобальные переменные:
 // Строка - Имя класса главного окна.
-const wchar_t *G_WinName = L"FormMain";
+const wchar_t *G_MainWinName = L"FormMain";
 //wchar_t G_WinName[] = L"FormMain";
 //	Дескриптор текущего экземпляра приложения, этот дескриптор содержит адрес начала кода программы.
 static HINSTANCE G_hInstance;
@@ -45,57 +55,52 @@ static HINSTANCE G_hInstance;
 static HWND G_hButton1;
 
 int APIENTRY wWinMain(
-	// Дескриптор текущего приложения
-	HINSTANCE p_this,
-	// В современных системах всегда 0
-	HINSTANCE p_prev,
-	// Командная строка
-	LPTSTR p_cmd,
-	// Режим отображения окна
-	int p_mode
+	// Дескриптор текущего приложения, инстанция приложения.
+	_In_ HINSTANCE p_this,
+	// В современных системах всегда 0.
+	_In_opt_ HINSTANCE p_prev,
+	// Командная строка.
+	_In_ LPTSTR p_cmd,
+	// Режим отображения окна.
+	_In_ int p_mode
 ) {
 	// Функция - Стандартная точка входа в программу.
 
-	// Дескриптор главного окна программы
-	HWND hWnd;
-	// Структура для хранения сообщения
-	MSG msg;
-	// Класс окна	
-	WNDCLASS wc = { 0 };
-
-	G_hInstance = p_this;
-
-	// Определение класса окна
-	wc.hInstance = G_hInstance;
-	// Имя класса окна
-	wc.lpszClassName = G_WinName;
-	// Функция окна для обработки сообщения от ОС (операционной системы)
-	wc.lpfnWndProc = WndProc;
-	// Стиль окна
-	wc.style = NULL; //CS_HREDRAW | CS_VREDRAW;
-	// Стандартная иконка
-	wc.hIcon = LoadIcon(NULL, IDI_APPLICATION);
-	// Стандартный курсор
-	wc.hCursor = LoadCursor(NULL, IDC_ARROW);
-	// Нет меню
-	wc.lpszMenuName = NULL;
-	// Нет дополнительных данных класса
-	wc.cbClsExtra = 0;
-	// Нет дополнительных данных окна
-	wc.cbWndExtra = 0;
-
-	// Заполнение окна цветом
-	wc.hbrBackground = (HBRUSH)(COLOR_WINDOW); //CreateSolidBrush(GetSysColor(COLOR_3DFACE));//(HBRUSH)(COLOR_WINDOW + 1);
-
-	// Регистрация класса окна в ОС, выход, если ошибка.
-	if (!RegisterClass(&wc)) {
-		return 0;
+	// Регистрация класса главного окна для данного приложения, выход если ошибка.
+	if (!RegisterMainClass(p_this)) {
+		return FALSE;
+	}
+	// Создаём класс главного окна.
+	HWND hWnd = CreateMainWindow(p_this, p_mode);
+	if (hWnd == nullptr) {
+		return FALSE;
 	}
 
+	// Структура для хранения сообщений от ОС.
+	MSG msg;
+
+	// Цикл обработки сообщений от ОС, GetMessage выбирает очередное сообщение из очереди и блокирует поток, если в очереди пусто.
+	while (GetMessage(&msg, nullptr, 0, 0)) {
+		if (IsDialogMessage(hWnd, &msg)) {
+			continue;
+		}
+		// Функция трансляции кодов нажатой клавиши клавиатуры.
+		TranslateMessage(&msg);
+		// Посылаем сообщение в оконную функцию окна данного приложения.
+		DispatchMessage(&msg);
+	}
+	return (int)msg.wParam;
+}
+HWND CreateMainWindow(HINSTANCE p_Inst, int p_mode) {
+// Создаём главное окно.
+
+	// Запоминаем экземпляр приложения в глобальной переменной.
+	G_hInstance = p_Inst;
+
 	// Создаём окно и получаем указатель (дескриптор) на него.
-	hWnd = CreateWindow(
+	HWND hWnd = CreateWindow(
 		// Имя класса окна.
-		G_WinName,
+		G_MainWinName,
 		// Заголовок окна, сообщаем компилятору, что строка задана в кодировке UTF-8.
 		L"Каркас классического Windows-приложения (世界你好!)",
 		// Стиль окна
@@ -115,28 +120,55 @@ int APIENTRY wWinMain(
 		NULL
 	);
 
-	// Выход, если ошибка
 	if (!hWnd) {
-		return NULL;
+		return nullptr;
 	}
 
 	// Показываем окно hWnd
 	ShowWindow(hWnd, p_mode);
-	// Обновляем окно
+	// Обновляем окно, для запуска перерисовки.
 	UpdateWindow(hWnd);
 
-	// Цикл обработки сообщений от ОС, GetMessage выбирает очередное сообщение из очереди и блокирует поток, если в очереди пусто.
-	while (GetMessage(&msg, NULL, NULL, NULL)) {
-		// Функция трансляции кодов нажатой клавиши.
-		TranslateMessage(&msg);
-		// Посылает сообщение в оконную функцию WndProc() окна.
-		DispatchMessage(&msg);
-	}
-	return msg.wParam;
+	return hWnd;
 }
 
-LRESULT CALLBACK WndProc(HWND p_hWnd, UINT p_message, WPARAM p_wParam, LPARAM p_lParam) {
-	// Оконная функция вызывается операционной системой, когда требуется передать сообщение из очереди для данного приложения.
+ATOM RegisterMainClass(HINSTANCE p_instance) {
+	// Регистрация класса окна.
+
+	// Класс окна.
+	WNDCLASSEXW wc = { 0 };
+
+	// Размер структуры.
+	wc.cbSize = sizeof(WNDCLASSEX);
+	// Определение класса окна
+	wc.hInstance = p_instance;
+	// Имя класса окна
+	wc.lpszClassName = G_MainWinName;
+	// Функция окна для обработки сообщения от ОС (операционной системы)
+	wc.lpfnWndProc = WndMainProc;
+	// Стиль окна
+	wc.style = CS_HREDRAW | CS_VREDRAW;
+	// Стандартная иконка
+	wc.hIcon = LoadIcon(wc.hInstance, IDI_APPLICATION);
+	// Маленькая иконка.
+	wc.hIconSm = LoadIcon(wc.hInstance, IDI_APPLICATION);
+	// Стандартный курсор
+	wc.hCursor = LoadCursor(nullptr, IDC_ARROW);
+	// Нет меню
+	wc.lpszMenuName = NULL;
+	// Нет дополнительных данных класса
+	wc.cbClsExtra = 0;
+	// Нет дополнительных данных окна
+	wc.cbWndExtra = 0;
+	// Заполнение окна цветом
+	wc.hbrBackground = (HBRUSH)(COLOR_WINDOW + 1); //CreateSolidBrush(GetSysColor(COLOR_3DFACE));//(HBRUSH)(COLOR_WINDOW + 1);
+
+	// Регистрация класса окна в ОС.
+	return RegisterClassExW(&wc);
+}
+
+LRESULT CALLBACK WndMainProc(HWND p_hWnd, UINT p_message, WPARAM p_wParam, LPARAM p_lParam) {
+	// Оконная функция главного окна вызывается операционной системой, когда требуется передать сообщение из очереди для данного приложения.
 
 	//HINSTANCE L_hInstance;
 	// Получаем декскриптор текущего приложения.
