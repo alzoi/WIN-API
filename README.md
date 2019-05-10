@@ -1,6 +1,6 @@
 # WIN-API
 
-# Ссылки 
+## Ссылки 
 http://www.charlespetzold.com/books.html  
 http://www.charlespetzold.com/pw5/index.html  
 http://www.firststeps.ru/mfc/steps/  
@@ -10,5 +10,5 @@ http://mdb-blog.blogspot.com/2010/11/microsoft-spy-or-spyxx-for-download.html
 https://www.codeproject.com/Articles/2078/Guide-to-WIN32-Paint-for-Intermediates  
 
 
-# GDI (Graphics Device Interface)
+## GDI (Graphics Device Interface)
 https://docs.microsoft.com/ru-ru/windows/desktop/gdi/windows-gdi  
