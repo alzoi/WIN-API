@@ -12,3 +12,7 @@ https://www.codeproject.com/Articles/2078/Guide-to-WIN32-Paint-for-Intermediates
 
 ## GDI (Graphics Device Interface)
 https://docs.microsoft.com/ru-ru/windows/desktop/gdi/windows-gdi  
+
+
+## GDI+
+https://docs.microsoft.com/en-us/windows/desktop/api/_gdiplus/  
