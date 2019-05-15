@@ -1,6 +1,7 @@
 # WIN-API
 
 ## Ссылки 
+https://docs.microsoft.com/en-us/windows/desktop/learnwin32/your-first-windows-program  
 http://www.charlespetzold.com/books.html  
 http://www.charlespetzold.com/pw5/index.html  
 http://www.firststeps.ru/mfc/winapi/hook/hook1.html
