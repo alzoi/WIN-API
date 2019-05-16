@@ -42,16 +42,24 @@ _T("x") | L"x" | "x"
 После этого определённые в заголовках библиотек Windows SDK и Microsoft C будут переключены на функции с поддержкой юникода, примерно следующим образом
 ```c
 #ifdef UNICODE
-#define SetWindowText  SetWindowTextW
+	#define SetWindowText  SetWindowTextW
 #else
-#define SetWindowText  SetWindowTextA
+	#define SetWindowText  SetWindowTextA
 #endif
 
 #ifdef _UNICODE
-#define _tcslen     wcslen
+	#define _tcslen     wcslen
 #else
-#define _tcslen     strlen
-#endif 
+	#define _tcslen     strlen
+#endif
+
+#ifdef _UNICODE 
+	#define _T(c) L##c
+	#define TEXT(c) L##c
+#else 
+	#define _T(c) c
+	#define TEXT(c) c
+#endif
 ```
 
 * Функция SetWindowTextA() поддерживает строки в кодировке ANSI.
