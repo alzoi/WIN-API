@@ -73,3 +73,12 @@ int main(void) {
   return 0;
 }
 ```
+Компиляция файла с разным расширением дат разные результаты
+```c
+$ gcc -o test test.c
+$ ./test
+I was compiled as C!
+$ g++ -o test test.cc
+$ ./test
+I was compiled as C++!
+```
