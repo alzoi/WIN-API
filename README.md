@@ -85,3 +85,17 @@ $ g++ -o test test.cc
 $ ./test
 I was compiled as C++!
 ```
+
+### Автоматизация сборки программ
+Файл Makefile
+```c
+all: main
+
+# Компоновка (сборка приложения из объектных файлов и файлов библиотек).
+main: main.o
+	gcc -Wl,--subsystem,windows main.o -o main
+
+# Компиляция.
+main.o: main.cpp
+	gcc -c -D UNICODE -D _UNICODE main.cpp
+```
