@@ -30,3 +30,4 @@ https://docs.microsoft.com/ru-ru/windows/desktop/learnwin32/working-with-strings
 ------ | --------------------------------|----------------------
 TCHAR | wchar_t | char
 TEXT("x") | L"x" | "x"
+_T("x") | L"x" | "x"
