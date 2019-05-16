@@ -39,3 +39,18 @@ _T("x") | L"x" | "x"
 #define _UNICODE
 #endif
 ```
+После этого определённые в заголовках библиотек Windows SDK и Microsoft C будут переключены на функции с поддержкой юникода, примерно следующим образом
+```с
+#ifdef UNICODE
+#define SetWindowText  SetWindowTextW
+#else
+#define SetWindowText  SetWindowTextA
+#endif
+
+#ifdef _UNICODE
+#define _tcslen     wcslen
+#else
+#define _tcslen     strlen
+#endif 
+```
+
