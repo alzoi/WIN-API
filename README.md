@@ -99,3 +99,7 @@ main: main.o
 main.o: main.cpp
 	gcc -c -D UNICODE -D _UNICODE main.cpp
 ```
+Команда сборки
+```
+make
+```
