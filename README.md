@@ -20,3 +20,13 @@ https://docs.microsoft.com/en-us/windows/desktop/api/_gdiplus/
 
 ## Direct2D
 https://docs.microsoft.com/ru-ru/windows/desktop/learnwin32/your-first-direct2d-program  
+
+## Кодировка
+https://docs.microsoft.com/ru-ru/windows/desktop/learnwin32/working-with-strings  
+
+Когда приложениям требовалась поддержка как Windows NT, так и Windows 95, Windows 98 и Windows Me, было полезно скомпилировать один и тот же код для строк ANSI или Unicode, в зависимости от целевой платформы. С этой целью Windows SDK предоставляет макросы, которые отображают строки в Unicode или ANSI, в зависимости от платформы.  
+
+Макрос | Тип в кодировке Unicode (utf-8) | Тип в кодировке ANSI
+------ | --------------------------------|----------------------
+TCHAR | wchar_t | char
+TEXT("x") | L"x" | "x"
