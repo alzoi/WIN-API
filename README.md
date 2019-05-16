@@ -54,3 +54,7 @@ _T("x") | L"x" | "x"
 #endif 
 ```
 
+```c
+Функция SetWindowTextA() поддерживает строки в кодировке ANSI.
+Функция SetWindowTextW() поддерживает строки в кодировке Unicode.
+```
