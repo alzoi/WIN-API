@@ -23,6 +23,7 @@ https://docs.microsoft.com/ru-ru/windows/desktop/learnwin32/your-first-direct2d-
 
 ## Кодировка
 https://docs.microsoft.com/ru-ru/windows/desktop/learnwin32/working-with-strings  
+https://docs.microsoft.com/ru-ru/cpp/text/generic-text-mappings-in-tchar-h?view=vs-2019  
 
 Когда приложениям требовалась поддержка как Windows NT, так и Windows 95, Windows 98 и Windows Me, было полезно скомпилировать один и тот же код для строк ANSI или Unicode, в зависимости от целевой платформы. С этой целью Windows SDK предоставляет макросы, которые отображают строки в Unicode или ANSI, в зависимости от платформы.  
 
