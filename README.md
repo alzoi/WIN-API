@@ -142,3 +142,6 @@ as hello.s -o hello.o
 # Компановка (связывание) объектных файлов и библиотек в исполняемый файл.
 ld hello.o ...libraries... -o hello
 ```
+
+## Установка MinGW (компилятор gcc для Windows)
+https://www.ics.uci.edu/~pattis/common/handouts/mingweclipse/mingw.html  
