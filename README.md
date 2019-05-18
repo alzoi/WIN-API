@@ -163,13 +163,13 @@ int main(int argc, char* argv[]) {
 	
 	// Переключаем консоль на поддержку символов кодировки UTF-8 (_O_U8TEXT = 0x40000).
 	_setmode(_fileno(stdout), 0x40000);
-   const _TCHAR * str = _T("Привет ☺\x263a\n");
-   _tprintf(_T("%s"), str);
+	const _TCHAR * str = _T("Привет ☺\x263a\n");
+	_tprintf(_T("%s"), str);
 	
 	// Ожидаем ввода числа.
 	int e; 
-	_tscanf(_T("%d"), &e);	
-   
+	_tscanf(_T("%d"), &e);
+	
 	return e;
 }
 ```
