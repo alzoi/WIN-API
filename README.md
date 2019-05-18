@@ -146,7 +146,7 @@ ld hello.o ...libraries... -o hello
 ## Установка MinGW (компилятор gcc для Windows)
 https://www.ics.uci.edu/~pattis/common/handouts/mingweclipse/mingw.html  
 
-Вывод в консоль UTF-8 символов для MinGW в Windows
+Пример вывода в консоль UTF-8 символов для пакета MinGW в операционной системе Windows
 ```c
 // source.cpp - пример вывода в консоль символов Unicode.
 
@@ -173,7 +173,7 @@ int main(int argc, char* argv[]) {
 	return e;
 }
 ```
-Вывод в консоль UTF-8 символов для Microsoft SDK в Windows
+Пример вывода в консоль UTF-8 символов для пакета SDK Microsoft Visual Studio в операционной системе Windows
 ```c
 // source.cpp - пример вывода в консоль символов Unicode.
 
