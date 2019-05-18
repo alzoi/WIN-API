@@ -145,3 +145,61 @@ ld hello.o ...libraries... -o hello
 
 ## Установка MinGW (компилятор gcc для Windows)
 https://www.ics.uci.edu/~pattis/common/handouts/mingweclipse/mingw.html  
+
+Вывод в консоль UTF-8 символов для MinGW в Windows
+```c
+// source.cpp - пример вывода в консоль символов Unicode.
+
+// Активация использования символов Unicode.
+#define UNICODE
+#define _UNICODE
+
+#include <tchar.h>
+
+#include <io.h>
+#include <stdio.h>
+
+int main(int argc, char* argv[]) {
+	
+	// Переключаем консоль на поддержку символов кодировки UTF-8 (_O_U8TEXT = 0x40000).
+	_setmode(_fileno(stdout), 0x40000);
+   const _TCHAR * str = _T("Привет ☺\x263a\n");
+   _tprintf(_T("%s"), str);
+	
+	// Ожидаем ввода числа.
+	int e; 
+	_tscanf(_T("%d"), &e);	
+   
+	return e;
+}
+```
+Вывод в консоль UTF-8 символов для Microsoft SDK в Windows
+```c
+// source.cpp - пример вывода в консоль символов Unicode.
+
+// Активация использования символов Unicode.
+#define UNICODE
+#define _UNICODE
+
+#include <tchar.h>
+
+#include <fcntl.h>
+#include <io.h>
+#include <stdio.h>
+
+int _tmain(int argc, _TCHAR* argv[]) {
+		
+	// Переключаем консоль на поддержку символов кодировки UTF-8.
+	_setmode(_fileno(stdout), _O_U8TEXT);
+	
+	// Вывод строки.
+	_tprintf_s(_T("Привет ☺"));
+	_tprintf_s(_T("\x263a\n"));
+	
+	// Ожидаем ввода числа.
+	int e; 
+	_tscanf_s(_T("%d"), &e);
+	
+	return e;
+}
+```
