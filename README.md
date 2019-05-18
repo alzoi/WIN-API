@@ -12,7 +12,9 @@ https://www.codeproject.com/Articles/2078/Guide-to-WIN32-Paint-for-Intermediates
 
 ## Безопасные функции
 https://docs.microsoft.com/ru-ru/cpp/c-runtime-library/security-features-in-the-crt?view=vs-2019  
-Пример: функция printf() заменяется более безопасной функцией printf_s().  
+
+Многие старые функции CRT имеют новые, более безопасные версии. Если безопасная функция существует, то старая менее безопасная версия помечена как нерекомендуемая (deprecated), а новая версия имеет суффикс _s ("secure" - "безопасный").
+Пример: функция printf() заменяется более безопасной функцией printf_s() и так далее...  
 
 ## GDI (Graphics Device Interface)
 https://docs.microsoft.com/ru-ru/windows/desktop/gdi/windows-gdi  
