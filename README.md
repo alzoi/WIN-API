@@ -117,9 +117,9 @@ I was compiled as C++!
 ```c
 all: main
 
-# Компоновка (сборка приложения из объектных файлов и файлов библиотек).
+# Компоновка (сборка приложения из объектных файлов и файла библиотеки gdi32, в опции -Wl задаются параметры для компоновщика).
 main: main.o
-	gcc -Wl,--subsystem,windows main.o -o main
+	gcc -Wl,--subsystem,windows main.o -lgdi32 -o main
 
 # Компиляция.
 main.o: main.cpp
