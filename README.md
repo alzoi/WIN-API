@@ -2,6 +2,7 @@
 
 ## Ссылки 
 https://docs.microsoft.com/ru-ru/cpp/?view=vs-2019  
+https://docs.microsoft.com/ru-ru/windows/desktop/  
 https://docs.microsoft.com/en-us/windows/desktop/learnwin32/your-first-windows-program  
 http://www.charlespetzold.com/books.html  
 http://www.charlespetzold.com/pw5/index.html  
