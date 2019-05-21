@@ -1,7 +1,7 @@
 # WIN-API
 
 ## Ссылки 
-https://docs.microsoft.com/ru-ru/cpp/cpp/cpp-language-reference?view=vs-2019
+https://docs.microsoft.com/ru-ru/cpp/cpp/cpp-language-reference?view=vs-2019  
 https://docs.microsoft.com/ru-ru/cpp/?view=vs-2019  
 https://docs.microsoft.com/ru-ru/windows/desktop/  
 https://docs.microsoft.com/ru-ru/windows/desktop/api/  
