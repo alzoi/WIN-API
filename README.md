@@ -233,5 +233,12 @@ https://docs.microsoft.com/ru-ru/cpp/build/reference/compiling-a-c-cpp-program?v
 call "D:\Programs\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvarsall.bat" x86
 
 @REM Добавить папку, в которой расположен данный bat-файл в перечень доступных директорий ОС.
-set path = %~dp;%path%
+set path = %~dp0;%path%
+```
+
+В скриптах могут использоваться различные директивы
+```bat
+%~dp0 - получить полный путь в котором расположен файл скрипта
+%* - получить все параметры переданные скрипту
+%my_variable% - получить значение переменной my_variable
 ```
