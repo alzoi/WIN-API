@@ -24,6 +24,9 @@ https://docs.microsoft.com/ru-ru/cpp/c-runtime-library/security-features-in-the-
 Многие старые функции CRT имеют новые, более безопасные версии. Если безопасная функция существует, то старая менее безопасная версия помечена как нерекомендуемая (deprecated), а новая версия имеет суффикс **_s** ("secure" - "безопасный").
 Пример: функция printf() заменяется более безопасной функцией printf_s() и так далее...  
 
+## Инструменты
+(Сравнение данных)[http://meldmerge.org/]
+
 ## GDI (Graphics Device Interface)
 https://docs.microsoft.com/ru-ru/windows/desktop/gdi/windows-gdi  
 
