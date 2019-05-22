@@ -225,7 +225,7 @@ https://docs.microsoft.com/ru-ru/cpp/build/reference/compiling-a-c-cpp-program?v
 Основной скрипт находится в файле vcvarsall.bat.
 Для подготовки всех необходимых переменных рабочего окружения, которые позволят выполнять сборку программ на пратформе x86 (32-битная архитектура процессоров) нужно создать bat-файл следующего содержания
 ```bat
-@REM build.bat
+@REM Файл - build.bat
 
 @echo off
 
