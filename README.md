@@ -229,6 +229,6 @@ https://docs.microsoft.com/ru-ru/cpp/build/reference/compiling-a-c-cpp-program?v
 
 # Запустить скрипт сборки.
 call "D:\Programs\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvarsall.bat" x86
-# Добавить папку, в которой расположен данный bat-файл в перечень доступных путей ОС.
+# Добавить папку, в которой расположен данный bat-файл в перечень доступных директорий ОС.
 set path = %~dp;%path%
 ```
