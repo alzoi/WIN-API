@@ -25,7 +25,7 @@ https://docs.microsoft.com/ru-ru/cpp/c-runtime-library/security-features-in-the-
 Пример: функция printf() заменяется более безопасной функцией printf_s() и так далее...  
 
 ## Инструменты
-(Сравнение данных)[http://meldmerge.org/]
+[Сравнение данных](http://meldmerge.org/)
 
 ## GDI (Graphics Device Interface)
 https://docs.microsoft.com/ru-ru/windows/desktop/gdi/windows-gdi  
