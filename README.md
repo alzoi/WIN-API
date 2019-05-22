@@ -227,6 +227,8 @@ https://docs.microsoft.com/ru-ru/cpp/build/reference/compiling-a-c-cpp-program?v
 ```bat
 @REM build.bat
 
+@echo off
+
 @REM Запустить скрипт создания рабочего окружения для сборки.
 call "D:\Programs\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvarsall.bat" x86
 
