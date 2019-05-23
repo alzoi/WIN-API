@@ -258,3 +258,7 @@ set
 ## Cmder  
 Использование Cmder в качестве командной строки разработчика для Visual Studio
 [medium.com/@ricardoserradas/how-to-use-cmder](https://medium.com/@ricardoserradas/how-to-use-cmder-as-the-developer-command-prompt-for-visual-studio-bcc54a99fc9d)
+настрока task
+```cmd
+cmd /k ""%ConEmuDir%\..\init.bat" & "D:\Programs\Microsoft Visual Studio\2017\Community\Common7\Tools\VsDevCmd.bat"" -new_console:d:"D:\tr\Pr":t:"Developer Command Prompt"
+```
