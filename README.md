@@ -261,7 +261,7 @@ set
 
 Настрока задачи (task) VC для запуска командной оболочки Cmder с активированной командной строкой разработчика Visual Studio  
 ```
-**cmd /k ""%ConEmuDir%\..\init.bat" & "D:\Programs\Microsoft Visual Studio\2017\Community\Common7\Tools\VsDevCmd.bat"" -new_console:d:"D:\Project\":t:"MSVC++"**  
+cmd /k ""%ConEmuDir%\..\init.bat" & "D:\Programs\Microsoft Visual Studio\2017\Community\Common7\Tools\VsDevCmd.bat"" -new_console:d:"D:\Project\":t:"MSVC++"
 ```
 Свойства ярлыка для запуска Cmder созданной задачей VC
 ```cmd
