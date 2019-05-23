@@ -233,7 +233,10 @@ call "D:\Programs\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcva
 @REM Добавить папку, в которой расположен данный bat-файл в перечень доступных директорий ОС.
 set path = %~dp0;%path%
 ```
-
+Справка по скрипту vcvarsall.bat
+```cmd
+vcvarsall.bat /help
+```
 В скриптах могут использоваться различные директивы
 
 Директива | Описание
