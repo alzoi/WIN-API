@@ -15,9 +15,6 @@ http://old-dos.ru/index.php?page=files&mode=files&do=show&id=1493
 http://mdb-blog.blogspot.com/2010/11/microsoft-spy-or-spyxx-for-download.html  
 https://www.codeproject.com/Articles/2078/Guide-to-WIN32-Paint-for-Intermediates  
 
-## Компиляция и сборка
-https://docs.microsoft.com/ru-ru/cpp/build/reference/compiling-a-c-cpp-program?view=vs-2019
-
 ## Безопасные функции
 https://docs.microsoft.com/ru-ru/cpp/c-runtime-library/security-features-in-the-crt?view=vs-2019  
 
@@ -216,9 +213,8 @@ int _tmain(int argc, _TCHAR* argv[]) {
 ```
 
 ## Система сборки Microsoft Visual C++
-https://docs.microsoft.com/ru-ru/cpp/build/reference/compiling-a-c-cpp-program?view=vs-2019  
 
-Для выполнения операций сборки выполняемых программ из исходных кодов на C/C++ необходимо подготовить рабочее окружение с помощью инструментов построения приложения (Build Tools для Visual Studio)[https://docs.microsoft.com/ru-ru/cpp/build/building-on-the-command-line?view=vs-2019].
+Для выполнения операций сборки выполняемых программ из исходных кодов на C/C++ необходимо подготовить рабочее окружение с помощью инструментов построения приложения [Build Tools для Visual Studio](https://docs.microsoft.com/ru-ru/cpp/build/building-on-the-command-line?view=vs-2019).  
 В состав Build Tools входят скрипты командной строки, которые расположены в папке Visual Studio
 ```
 \Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\
