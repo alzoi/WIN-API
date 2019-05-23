@@ -245,4 +245,7 @@ set path = %~dp0;%path%
 ```
 D:\Programs\Microsoft Visual Studio\2017\Community\Common7\Tools\VsDevCmd.bat
 ```
-ссылка на который размещена в меню Пуск > Все программы > Visual Studio 2017 > Visual Studio Tools > Командная строка разработчика для VS 2017
+ссылка на который размещена в меню
+```
+Пуск > Все программы > Visual Studio 2017 > Visual Studio Tools > Командная строка разработчика для VS 2017
+```
