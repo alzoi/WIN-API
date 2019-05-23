@@ -260,8 +260,9 @@ set
 [medium.com/@ricardoserradas/how-to-use-cmder](https://medium.com/@ricardoserradas/how-to-use-cmder-as-the-developer-command-prompt-for-visual-studio-bcc54a99fc9d)  
 
 Настрока задачи (task) VC для запуска командной оболочки Cmder с активированной командной строкой разработчика Visual Studio  
+```
 **cmd /k ""%ConEmuDir%\..\init.bat" & "D:\Programs\Microsoft Visual Studio\2017\Community\Common7\Tools\VsDevCmd.bat"" -new_console:d:"D:\Project\":t:"MSVC++"**  
-
+```
 Свойства ярлыка для запуска Cmder созданной задачей VC
 ```cmd
 D:\Programs\cmder_mini\Cmder.exe /TASK VC
