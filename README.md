@@ -214,7 +214,7 @@ int _tmain(int argc, _TCHAR* argv[]) {
 
 ## Система сборки Microsoft Visual C++
 
-Для выполнения операций сборки выполняемых программ из исходных кодов на C/C++ необходимо подготовить рабочее окружение с помощью инструментов построения приложения [Build Tools для Visual Studio](https://docs.microsoft.com/ru-ru/cpp/build/building-on-the-command-line?view=vs-2019).  
+Для выполнения операций компиляции исходных кодов на языке C/C++ и сборки исполняемой программы (*.exe файла) необходимо подготовить рабочее окружение с помощью инструментов построения приложения [Build Tools для Visual Studio](https://docs.microsoft.com/ru-ru/cpp/build/building-on-the-command-line?view=vs-2019).  
 В состав Build Tools входят скрипты командной строки, которые расположены в папке Visual Studio
 ```
 \Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\
