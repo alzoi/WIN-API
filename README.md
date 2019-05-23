@@ -214,7 +214,8 @@ int _tmain(int argc, _TCHAR* argv[]) {
 
 ## Система сборки Microsoft Visual C++
 
-Для выполнения операций компиляции исходных кодов на языке C/C++ и сборки исполняемой программы (*.exe файла) необходимо подготовить рабочее окружение с помощью инструментов построения приложения [Build Tools для Visual Studio](https://docs.microsoft.com/ru-ru/cpp/build/building-on-the-command-line?view=vs-2019).  
+Для выполнения операций компиляции исходных кодов на языке C/C++ и сборки исполняемой программы (*.exe файла) необходимо подготовить рабочее окружение (создать необходимые переменные, настроить пути к библиотекам, заголовкам и SDK).
+Окружение создаётся с помощью скриптов, которые входят в инструментарий построения приложений [Build Tools для Visual Studio](https://docs.microsoft.com/ru-ru/cpp/build/building-on-the-command-line?view=vs-2019).  
 В состав Build Tools входят скрипты командной строки, которые расположены в папке Visual Studio
 ```
 \Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\
@@ -241,7 +242,7 @@ set path = %~dp0;%path%
 %* | получить все параметры переданные скрипту
 %my_variable% | получить значение переменной my_variable
 
-Можно использовать скрипт
+Можно использовать скрипт VsDevCmd.bat, если параметры не указаны, то будет подготовлена окружение для создания 32-разрядного кода x86
 ```
 D:\Programs\Microsoft Visual Studio\2017\Community\Common7\Tools\VsDevCmd.bat
 ```
