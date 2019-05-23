@@ -249,3 +249,8 @@ D:\Programs\Microsoft Visual Studio\2017\Community\Common7\Tools\VsDevCmd.bat
 ```
 Пуск > Все программы > Visual Studio 2017 > Visual Studio Tools > Командная строка разработчика для VS 2017
 ```
+Все установленные переменные рабочего окружения можно посмотреть комадной
+```cmd
+set
+```
+Для сравнения можно посмотреть вывод команды **set** до запуска bat-скрипта Build системы.  
