@@ -254,3 +254,6 @@ D:\Programs\Microsoft Visual Studio\2017\Community\Common7\Tools\VsDevCmd.bat
 set
 ```
 Для сравнения можно посмотреть вывод команды **set** до запуска bat-скрипта Build системы.  
+
+## Настройка Cmder  
+https://medium.com/@ricardoserradas/how-to-use-cmder-as-the-developer-command-prompt-for-visual-studio-bcc54a99fc9d
