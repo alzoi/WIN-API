@@ -255,5 +255,6 @@ set
 ```
 Для сравнения можно посмотреть вывод команды **set** до запуска bat-скрипта Build системы.  
 
-## Настройка Cmder  
-https://medium.com/@ricardoserradas/how-to-use-cmder-as-the-developer-command-prompt-for-visual-studio-bcc54a99fc9d
+## Cmder  
+Использование Cmder в качестве командной строки разработчика для Visual Studio
+[medium.com/@ricardoserradas/how-to-use-cmder](https://medium.com/@ricardoserradas/how-to-use-cmder-as-the-developer-command-prompt-for-visual-studio-bcc54a99fc9d)
