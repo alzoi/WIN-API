@@ -280,3 +280,7 @@ lib -list vcruntimed.lib
 dumpbin -EXPORTS vcruntimed.lib
 dumpbin -SYMBOLS vcruntimed.lib
 ```
+Получение из машинных кодов объектного файла инструкций языка Ассемблера, то есть процесс дизассемблирования
+```
+dumpbin -disasm main1.obj
+```
