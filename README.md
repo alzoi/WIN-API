@@ -278,4 +278,5 @@ D:\Programs\cmder_mini\Cmder.exe /TASK VC
 ```
 lib -list vcruntimed.lib
 dumpbin -EXPORTS vcruntimed.lib
+dumpbin -SYMBOLS vcruntimed.lib
 ```
