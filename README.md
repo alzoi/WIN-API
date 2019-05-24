@@ -260,7 +260,9 @@ D:\Programs\Microsoft Visual Studio\2017\Community\Common7\Tools\VsDevCmd.bat
 set
 ```
 Для сравнения можно посмотреть вывод команды **set** до запуска bat-скрипта Build системы.  
-Анатомия CRT https://rsdn.org/article/cpp/crt.xml  
+Анатомия CRT  
+https://rsdn.org/article/cpp/crt.xml  
+http://bytepointer.com/resources/pietrek_libctiny_2001.htm  
 
 ## Cmder  
 Использование Cmder в качестве командной строки разработчика для Visual Studio
