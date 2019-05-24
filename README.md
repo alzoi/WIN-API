@@ -293,3 +293,5 @@ dumpbin -disasm main.obj
 Просмотр заголовков исполняемого файла
 dumpbin -headers main.exe
 
+Собрать программу и записать карту вызово в файл main.map
+cl main.c -link -map
