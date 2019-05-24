@@ -174,9 +174,10 @@ int main(int argc, char* argv[]) {
 	const _TCHAR * str = _T("Привет ☺\x263a\n");
 	_tprintf(_T("%s"), str);
 	
-	// Ожидаем ввода числа.
-	int e; 
-	_tscanf(_T("%d"), &e);
+	// Ожидание ввода.
+	getchar();
+	//int e; 
+	//_tscanf(_T("%d"), &e);
 	
 	return e;
 }
@@ -204,9 +205,10 @@ int _tmain(int argc, _TCHAR* argv[]) {
 	_tprintf_s(_T("Привет ☺"));
 	_tprintf_s(_T("\x263a\n"));
 	
-	// Ожидаем ввода числа.
-	int e; 
-	_tscanf_s(_T("%d"), &e);
+	// Ожидание ввода.
+	getchar();
+	//int e; 
+	//_tscanf_s(_T("%d"), &e);
 	
 	return e;
 }
