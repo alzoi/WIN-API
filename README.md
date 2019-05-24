@@ -277,4 +277,5 @@ D:\Programs\cmder_mini\Cmder.exe /TASK VC
 Просмотр содержимого файла библиотеки vcruntimed.lib
 ```
 lib -list vcruntimed.lib
+dumpbin -EXPORTS vcruntimed.lib
 ```
