@@ -277,8 +277,8 @@ D:\Programs\cmder_mini\Cmder.exe /TASK VC
 Просмотр содержимого файла библиотеки vcruntimed.lib
 ```cmd
 lib -list vcruntimed.lib
-dumpbin -EXPORTS vcruntimed.lib
-dumpbin -SYMBOLS vcruntimed.lib
+dumpbin -exports vcruntimed.lib
+dumpbin -symbols vcruntimed.lib
 ```
 Получение из машинных кодов объектного файла инструкций языка Ассемблера, то есть процесс дизассемблирования
 ```
