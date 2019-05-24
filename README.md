@@ -275,6 +275,9 @@ cmd /k ""%ConEmuDir%\..\init.bat" & "D:\Programs\Microsoft Visual Studio\2017\Co
 D:\Programs\cmder_mini\Cmder.exe /TASK VC
 ```
 
+## Компиляция
+https://docs.microsoft.com/ru-ru/cpp/build/reference/compiling-a-c-cpp-program?view=vs-2019  
+
 Просмотр содержимого файла библиотеки vcruntimed.lib
 ```cmd
 lib -list vcruntimed.lib
