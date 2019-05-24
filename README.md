@@ -298,3 +298,14 @@ dumpbin -headers main.exe
 ```cmd
 cl main.c -link -map
 ```
+
+
+```c
+// cl /MD main1.c user32.lib -link -subsystem:console
+// cl main1.c -link -nod -verbose -entry:main
+
+#include <stdio.h>
+void main() {
+	printf("1\n");
+}
+```
