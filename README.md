@@ -288,5 +288,8 @@ dumpbin -symbols vcruntimed.lib
 ```
 Получение из машинных кодов объектного файла инструкций языка Ассемблера, то есть процесс дизассемблирования
 ```
-dumpbin -disasm main1.obj
+dumpbin -disasm main.obj
 ```
+Просмотр заголовков исполняемого файла
+dumpbin -headers main.exe
+
