@@ -294,4 +294,6 @@ dumpbin -disasm main.obj
 dumpbin -headers main.exe
 
 Собрать программу и записать карту вызово в файл main.map
+```cmd
 cl main.c -link -map
+```
