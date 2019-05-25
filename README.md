@@ -328,7 +328,7 @@ int main() {
 cl main_winapi.c -link -nod -incremental:no -entry:main -verbose:lib kernel32.lib
 ```
 Опция компоновщика -nod отключает все стандартные библиотеки CRT, которые подключаются по умолчанию.  
-Наша программа будет скомпонована с библиотекой kernel32.lib, которая входит  в состав [WinAPI](https://en.wikipedia.org/wiki/Microsoft_Windows_library_files).  
+Наша программа будет скомпонована с библиотекой kernel32.lib, которая входит  в состав [WinAPI](https://en.wikipedia.org/wiki/Microsoft_Windows_library_files) функций ядра операционной системы Windows.  
 
 Исполняемый файл будет иметь размер **2,5 КБ (или 2 560 Байт)**, что примерно в 40 раз меньше размера классической программы размером 99 КБ (или 101 376 Байт).  
 ```c
