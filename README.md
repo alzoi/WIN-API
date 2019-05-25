@@ -309,3 +309,37 @@ void main() {
 	printf("1\n");
 }
 ```
+## Hello, World на WinAPI
+```c
+// main_winapi.c
+
+#include <windows.h>
+
+#define STRLEN(x) (sizeof(x)/sizeof(TCHAR) - 1)
+const TCHAR tMsg[] = "HELLO, WORLD";
+
+int main() {
+	WriteConsole(GetStdHandle(STD_OUTPUT_HANDLE), &tMsg, STRLEN(tMsg), NULL, NULL);	
+	ExitProcess(0);
+}
+```
+Сборка программы
+```
+cl main_winapi.c -link -nod -incremental:no -entry:main -verbose:lib kernel32.lib
+```
+Опция компоновщика -nod отключает все стандартные библиотеки CRT, которые подключаются по умолчанию. Наша программа будет скомпонована с библиотекой kernel32.lib, которая входит  в состав WinAPI (https://en.wikipedia.org/wiki/Microsoft_Windows_library_files).   
+Исполняемый файл будет иметь размер 2,5 КБ или 2560 Байт, что примерно в 40 раз меньше размера классической программы размером 99 КБ или 101376 Байт.  
+```
+// main_crt.c
+
+#include <stdio.h>
+
+int main() {
+	printf("HELLO, WORLD\n");
+	return 0;
+}
+```
+Компиляция
+```c
+cl main_crt.c
+```
