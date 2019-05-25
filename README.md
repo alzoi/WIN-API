@@ -266,8 +266,9 @@ https://rsdn.org/article/cpp/crt.xml
 http://bytepointer.com/resources/pietrek_libctiny_2001.htm  
 
 ## Cmder  
-Использование эмулятора терминала [Cmder](https://cmder.net/) в качестве командной строки разработчика для Visual Studio
+Использование эмулятора терминала [Cmder](https://cmder.net/) в качестве командной строки разработчика для Visual Studio  
 [medium.com/@ricardoserradas/how-to-use-cmder](https://medium.com/@ricardoserradas/how-to-use-cmder-as-the-developer-command-prompt-for-visual-studio-bcc54a99fc9d)  
+[Настройка Cmder для работы с вкладками](https://isqua.ru/blog/2016/11/05/nastroika-tierminala-cmder-v-windows/)
 
 Настрока задачи (task) VC для запуска командной оболочки Cmder с активированной командной строкой разработчика Visual Studio  
 ```
