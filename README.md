@@ -216,7 +216,7 @@ int _tmain(int argc, _TCHAR* argv[]) {
 ```
 
 ## Система сборки Microsoft Visual C++
-
+https://docs.microsoft.com/ru-ru/cpp/build/reference/c-cpp-building-reference?view=vs-2019  
 Для выполнения операций компиляции исходных кодов на языке C/C++ и сборки исполняемых программ (*.exe файлов) необходимо подготовить рабочее окружение (создать необходимые переменные, настроить пути к стандартным библиотекам [CRT](https://docs.microsoft.com/ru-ru/cpp/c-runtime-library/crt-library-features?view=vs-2019), заголовкам библиотечных функций и [SDK](https://docs.microsoft.com/ru-ru/visualstudio/extensibility/visual-studio-sdk?view=vs-2019)).  
 Окружение создаётся с помощью скриптов, которые входят в инструментарий построения приложений [Build Tools для Visual Studio](https://docs.microsoft.com/ru-ru/cpp/build/building-on-the-command-line?view=vs-2019).  
 В состав Build Tools входят скрипты командной строки, которые расположены в папке Visual Studio
@@ -269,6 +269,7 @@ http://bytepointer.com/resources/pietrek_libctiny_2001.htm
 Использование эмулятора терминала [Cmder](https://cmder.net/) в качестве командной строки разработчика для Visual Studio  
 [medium.com/@ricardoserradas/how-to-use-cmder](https://medium.com/@ricardoserradas/how-to-use-cmder-as-the-developer-command-prompt-for-visual-studio-bcc54a99fc9d)  
 [Настройка Cmder, использование вкладок](https://isqua.ru/blog/2016/11/05/nastroika-tierminala-cmder-v-windows/)
+https://vladimir-rodin.com/blog/post/windows-console  
 
 Настрока задачи (task) VC для запуска командной оболочки Cmder с активированной командной строкой разработчика Visual Studio  
 ```
