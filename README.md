@@ -1,5 +1,6 @@
 # WIN-API
 https://docs.microsoft.com/ru-ru/windows/desktop/apiindex/windows-api-list  
+https://docs.microsoft.com/en-us/windows/desktop/api/  
 https://www-user.tu-chemnitz.de/~heha/petzold/petzold.htm  
 https://www-user.tu-chemnitz.de/~heha/petzold/content.htm  
 
