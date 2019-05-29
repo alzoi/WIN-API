@@ -1,6 +1,7 @@
 # WIN-API
 https://docs.microsoft.com/ru-ru/windows/desktop/apiindex/windows-api-list  
 https://www-user.tu-chemnitz.de/~heha/petzold/petzold.htm  
+https://www-user.tu-chemnitz.de/~heha/petzold/content.htm  
 
 ## Ссылки 
 https://docs.microsoft.com/ru-ru/cpp/cpp/cpp-language-reference?view=vs-2019  
