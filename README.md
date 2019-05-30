@@ -358,7 +358,7 @@ https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/rpt-rptf-rptw-r
 ```c
 #include <crtdbg.h>
 
-int main(){
+int main() {
 	_RPT1(0, "%s\n", "моё сообщение");
 	return 0;
 }
