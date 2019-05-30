@@ -353,7 +353,7 @@ cl main_crt.c
 ```
 
 ## Отладка
-Вывод диагностических сообщений в режиме отладки,если определена константа DEBUG  
+Вывод диагностических сообщений в режиме отладки, то есть если определена константа _DEBUG  
 https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/rpt-rptf-rptw-rptfw-macros?view=vs-2019  
 ```c
 #include <crtdbg.h>
