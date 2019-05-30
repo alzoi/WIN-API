@@ -351,3 +351,14 @@ int main() {
 ```
 cl main_crt.c
 ```
+
+## Отладка
+Вывод диагностических сообщений в режиме отладки,если определена константа DEBUG  
+https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/rpt-rptf-rptw-rptfw-macros?view=vs-2019  
+```c
+#include <crtdbg.h>
+#include <stdio.h>
+int main(){
+	_RPT1(0, "%s\n", "моё сообщение");
+	return 0;
+```
