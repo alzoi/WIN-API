@@ -361,4 +361,5 @@ https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/rpt-rptf-rptw-r
 int main(){
 	_RPT1(0, "%s\n", "моё сообщение");
 	return 0;
+}
 ```
