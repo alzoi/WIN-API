@@ -70,7 +70,7 @@ int WINAPI _tWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR szCmdLin
 		
 		// Получаем входящее (переданное ОС) сообщение из очереди сообщений нашей программы, если сообщения нет функция не блокирует поток.
 		if(PeekMessage(&msg, NULL, 0, 0, PM_REMOVE)) {
-			// Нажатие и отпускание клавиш, в переменную msg.wParam операционная система помещает скан-код нажатой клавиши клавиатуры.
+			// Нажатие и отпускание клавиш, в переменную msg.wParam операционная система помещает виртуальный код клавиши клавиатуры.
 			if (msg.message == WM_KEYDOWN || msg.message == WM_SYSKEYDOWN || msg.message == WM_KEYUP || msg.message == WM_SYSKEYDOWN) {
 				_RPT3(0, "MES %x %c %x\n", msg.message, (TCHAR)msg.wParam, msg.wParam);
 			}			
