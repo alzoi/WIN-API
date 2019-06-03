@@ -1,3 +1,4 @@
+
 // Исключаем редко используемые компоненты из заголовков Windows.
 #define WIN32_LEAN_AND_MEAN
 
@@ -70,6 +71,7 @@ int WINAPI _tWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR szCmdLin
 }
 
 LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam) {
+	
 	// Оконная функция главного окна вызывается операционной системой,
 	// когда требуется передать сообщение из очереди для данного приложения.
 
