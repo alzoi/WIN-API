@@ -369,6 +369,9 @@ int main() {
 Отладочную информацию можно выводить следующим образом
 ```c
 int print_log(const char* format, ...) {
+
+	// Вывод отладочной информации.
+	
 	static char s_printf_buf[1024];
 	va_list args;
 	va_start(args, format);
