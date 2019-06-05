@@ -366,3 +366,28 @@ int main() {
 	return 0;
 }
 ```
+Отладочную информацию можно выводить следующим образом
+```c
+int print_log(const char* format, ...) {
+	static char s_printf_buf[1024];
+	va_list args;
+	va_start(args, format);
+	_vsnprintf_s(s_printf_buf, sizeof(s_printf_buf), format, args);
+	va_end(args);
+	OutputDebugStringA(s_printf_buf);
+	return 0;
+}
+
+#ifndef _DEBUG
+	#define _printf(format, ...)
+#else
+	#define _printf(format, ...) print_log(format, __VA_ARGS__)
+#endif // _DEBUG
+
+int main(void){
+	int a, b, c;
+	// Выводим значения переменных.
+	_printf("%d %d\n", a, b, c);
+}
+
+```
