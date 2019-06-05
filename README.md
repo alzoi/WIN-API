@@ -19,6 +19,9 @@ http://old-dos.ru/index.php?page=files&mode=files&do=show&id=1493
 http://mdb-blog.blogspot.com/2010/11/microsoft-spy-or-spyxx-for-download.html  
 https://www.codeproject.com/Articles/2078/Guide-to-WIN32-Paint-for-Intermediates  
 
+## Утилиты для исследования Windows
+https://docs.microsoft.com/en-us/sysinternals/  
+
 ## Безопасные функции
 https://docs.microsoft.com/ru-ru/cpp/c-runtime-library/security-features-in-the-crt?view=vs-2019  
 
