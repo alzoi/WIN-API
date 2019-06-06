@@ -15,7 +15,7 @@
 
 LRESULT CALLBACK WndProc(HWND, UINT, WPARAM, LPARAM);
 
-int WINAPI _tWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR szCmdLine, int iCmdShow) {
+int APIENTRY _tWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR szCmdLine, int iCmdShow) {
 
 	// Точка входа в программу, после загрузки программы в память, ОС передаёт управление в эту функцию.
 	// Входные параметры:
