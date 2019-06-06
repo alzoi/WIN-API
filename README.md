@@ -368,6 +368,8 @@ int main() {
 ```
 Отладочную информацию можно выводить следующим образом
 ```c
+#include <stdio.h>
+
 int print_log(const char* format, ...) {
 
 	// Вывод отладочной информации.
@@ -388,9 +390,9 @@ int print_log(const char* format, ...) {
 #endif // _DEBUG
 
 int main(void){
-	int a, b, c;
+	int a=1, b=2, c=3;
 	// Выводим значения переменных.
-	_printf("%d %d\n", a, b, c);
+	_printf("%d %d %d\n", a, b, c);
 }
 
 ```
