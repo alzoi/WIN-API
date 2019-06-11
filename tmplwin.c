@@ -46,7 +46,8 @@ int APIENTRY _tWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR lpCm
 	}
 
 	// Создание окна с именем szAppName.
-	hwnd = CreateWindow(
+	hwnd = CreateWindowEx(
+		0,
 		szAppName,
 		_T("The Hello Program"),
 		// Стиль окна.
