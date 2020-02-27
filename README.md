@@ -42,6 +42,10 @@ https://docs.microsoft.com/ru-ru/cpp/c-runtime-library/security-features-in-the-
 ## Инструменты
 Сравнение данных http://meldmerge.org/
 
+## GUI
+### wxwidgets
+https://www.youtube.com/watch?v=sRhoZcNpMb4
+
 ## GDI (Graphics Device Interface)
 https://docs.microsoft.com/ru-ru/windows/desktop/gdi/windows-gdi  
 
