@@ -46,6 +46,9 @@ https://docs.microsoft.com/ru-ru/cpp/c-runtime-library/security-features-in-the-
 ### wxwidgets
 https://www.youtube.com/watch?v=sRhoZcNpMb4
 
+## История GUI SAP
+https://sap.sd/category/sap
+
 ## GDI (Graphics Device Interface)
 https://docs.microsoft.com/ru-ru/windows/desktop/gdi/windows-gdi  
 
