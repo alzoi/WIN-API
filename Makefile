@@ -1,3 +1,11 @@
+# Makefile
+# Сборка С/C++ проекта в Windows.
+
+# Перейти в каталог с данным файлом и выполнить инициализацию рабочего
+# окружения для компиляции программ c/c++:
+# D:\vs2017c\VC\Auxiliary\Build\vcvars32.bat
+# D:\vs2017c\VC\Tools\MSVC\14.13.26128\bin\Hostx86\x86\nmake.exe
+
 all: hello.exe
 
 CC		=cl
