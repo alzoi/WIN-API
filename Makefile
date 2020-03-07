@@ -1,6 +1,6 @@
 all: hello.exe
 
-CC			=cl
+CC		=cl
 CFLAGS		=/nologo /MT /c /TC /W3 /D "_USING_V110_SDK71_" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_UNICODE" /D "UNICODE"
 
 LINKER		=link
