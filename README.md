@@ -1,4 +1,5 @@
 # WIN-API
+http://zetcode.com/gui/winapi/
 https://docs.microsoft.com/en-us/windows/win32/learnwin32/learn-to-program-for-windows
 https://docs.microsoft.com/ru-ru/windows/desktop/apiindex/windows-api-list  
 https://docs.microsoft.com/en-us/windows/desktop/api/  
