@@ -5,7 +5,7 @@ https://docs.microsoft.com/en-us/windows/desktop/api/
 https://www-user.tu-chemnitz.de/~heha/petzold/petzold.htm  
 https://www-user.tu-chemnitz.de/~heha/petzold/content.htm  
 
-# Чистый Win32 API (pure)
+# Чистый Win32 API (pure Win32 API)
 http://zetcode.com/gui/winapi/  
 https://www.codeproject.com/KB/dialog/  
 
