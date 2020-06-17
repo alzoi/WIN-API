@@ -1,3 +1,8 @@
+// Вывод прямоугольника в окно консоли.
+// Сборка:
+// gcc -c main.c -o main.o
+// gcc main.o C:\CodeBlocks\MinGW\x86_64-w64-mingw32\lib\libgdi32.a -o main.exe
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -17,7 +22,7 @@ int main() {
    // Получаем дескриптор стандартного объекта кисть сплошного цвета
    // и устанавливаем его в устройстве в качестве текущего объекта.
    SelectObject(dc, GetStockObject(DC_BRUSH));
-   // Для устройства dc устанавливаем цвет для кисти.
+   // В устройстве dc устанавливаем цвет для кисти.
    SetDCBrushColor(dc, RGB(255, 0, 255));
    
    // Рисуем прямоугольник в устройстве dc.
