@@ -1,3 +1,6 @@
+# Установка компилятора MinGW в Windows
+Скачиваем zip архив последней версии компилятора с сайта https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/
+
 # Установка Code::Blocks
 Бесплатная кроссплатформенная среда разработки на языках C, C++ и Fortran. Code::Blocks написана на С++ и использует библиотеку wxWidgets.  
 Для установки среды заходим на портал http://www.codeblocks.org/downloads/binaries и для архитектуры x32 выбираем версию [codeblocks-20.03mingw-32bit-setup.exe](https://www.fosshub.com/Code-Blocks.html?dwl=codeblocks-20.03mingw-32bit-setup.exe)  
