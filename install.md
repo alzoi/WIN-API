@@ -22,6 +22,6 @@ g++ -v
 - для x32 нужно скачать среду разработки без встроенного компилятора [codeblocks-20.03-32bit-setup.exe](https://www.fosshub.com/Code-Blocks.html?dwl=codeblocks-20.03-32bit-setup.exe)  
 
 Во время установки все опции оставляем по умолчанию: нажимаем Next и OK.
-
-Библиотеки и заголовочные файлы будут находиться в папке C:\Program Files\CodeBlocks\MinGW\x86_64-w64-mingw32\
+Среду лучше установить в папку D:\dev\codeblocks\  
+Библиотеки и заголовочные файлы будут находиться в папке D:\dev\codeblocks\MinGW\x86_64-w64-mingw32\
 
