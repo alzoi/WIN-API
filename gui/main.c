@@ -1,7 +1,7 @@
 // Вывод прямоугольника в окно консоли.
 // Сборка:
-// gcc -c main.c -o main.o
-// gcc main.o C:\CodeBlocks\MinGW\x86_64-w64-mingw32\lib\libgdi32.a -o main.exe
+// gcc -Wall -c main.c -o main.o
+// gcc main.o D:\dev\mingw64\mingw32\i686-w64-mingw32\lib\libgdi32.a -o main.exe
 
 #include <stdio.h>
 #include <stdlib.h>
