@@ -28,3 +28,7 @@ g++ -v
 Запускаем Code::Blocks в меню *Settings* > *Compiler...*  
 Выбираем вкладку *Toolchain executables* и нажимаем кнопку *Auto-detect*  
 Система должна определить папку в которую был установлен компилятор, например D:\dev\mingw64\mingw32
+
+## Разработка приложений
+Библиотеки добавляются в проект через меню *Project* > *Build options*
+На вкладке *Linker settings* нажимаем кнопку *Add* и добавляем файл библиотеки, например [GDI](https://ru.wikipedia.org/wiki/GDI) графическая подсистема Windows D:\dev\mingw64\mingw32\i686-w64-mingw32\lib\libgdi32.a
