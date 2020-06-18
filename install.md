@@ -31,4 +31,5 @@ g++ -v
 
 ## Разработка приложений
 Библиотеки добавляются в проект через меню *Project* > *Build options...*  
-На вкладке *Linker settings* нажимаем кнопку *Add* и добавляем файл библиотеки, например [GDI](https://ru.wikipedia.org/wiki/GDI) (API для работы с графикой в Windows) **D:\dev\mingw64\mingw32\i686-w64-mingw32\lib\libgdi32.a**
+На вкладке *Linker settings* нажимаем кнопку *Add* и добавляем файл библиотеки, например [GDI](https://ru.wikipedia.org/wiki/GDI) (API для работы с графикой в Windows) файл статической библиотеки  
+**D:\dev\mingw64\mingw32\i686-w64-mingw32\lib\libgdi32.a**
