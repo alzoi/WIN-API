@@ -21,7 +21,7 @@ g++ -v
 - для архитектуры x64 выбираем версию [codeblocks-20.03mingw-setup.exe](https://www.fosshub.com/Code-Blocks.html?dwl=codeblocks-20.03mingw-setup.exe) данный установщик содержит компилятор MinGW для x64 битной архитектуры операционной системы Windows.  
 - для x32 нужно скачать среду разработки без встроенного компилятора [codeblocks-20.03-32bit-setup.exe](https://www.fosshub.com/Code-Blocks.html?dwl=codeblocks-20.03-32bit-setup.exe)  
 
-Во время установки все опции оставляем по умолчанию: нажимаем Next и OK.
+Во время установки все опции оставляем по умолчанию: нажимаем Next и OK.  
 Среду лучше установить в папку D:\dev\codeblocks\  
 Библиотеки и заголовочные файлы будут находиться в папке D:\dev\codeblocks\MinGW\x86_64-w64-mingw32\
 
