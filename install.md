@@ -1,7 +1,7 @@
 # Установка компилятора MinGW в Windows
-Запускаем файл установщик MinGW-W64-install.exe который нужно скачать с сайта https://sourceforge.net/projects/mingw-w64/files/  
+Запускаем файл установщик MinGW-W64-install.exe данный файл нужно скачать с сайта https://sourceforge.net/projects/mingw-w64/files/  
 
-В папке https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/ в zip архивах ранятся исходные коды всех релизов компилятора MinGW.  
+В папке https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/ в zip архивах хранятся исходные коды всех релизов компилятора MinGW.  
 Компилятор лучше установить в папку без пробелов, например D:\dev\mingw64\  
 
 После установки, в переменную операционной среды PATH прописываем путь до папки:
@@ -14,3 +14,4 @@
 Во время установки все опции оставляем по умолчанию: нажимаем Next и OK.
 
 Библиотеки и заголовочные файлы будут находиться в папке C:\Program Files\CodeBlocks\MinGW\x86_64-w64-mingw32\
+
