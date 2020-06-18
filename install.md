@@ -17,7 +17,7 @@ g++ -v
 # Установка Code::Blocks
 Бесплатная кроссплатформенная среда разработки на языках C, C++ и Fortran. Code::Blocks написана на С++ и использует библиотеку wxWidgets.  
 
-Для установки среды заходим на портал http://www.codeblocks.org/downloads/binaries  
+Заходим на портал http://www.codeblocks.org/downloads/binaries  
 - для архитектуры x64 выбираем версию [codeblocks-20.03mingw-setup.exe](https://www.fosshub.com/Code-Blocks.html?dwl=codeblocks-20.03mingw-setup.exe) данный установщик содержит компилятор MinGW для x64 битной архитектуры операционной системы Windows.  
 - для x32 нужно скачать среду разработки без встроенного компилятора [codeblocks-20.03-32bit-setup.exe](https://www.fosshub.com/Code-Blocks.html?dwl=codeblocks-20.03-32bit-setup.exe)  
 Во время установки все опции оставляем по умолчанию: нажимаем Next и OK.
