@@ -285,6 +285,14 @@ D:\Programs\Microsoft Visual Studio\2017\Community\Common7\Tools\VsDevCmd.bat
 ```
 Пуск > Все программы > Visual Studio 2017 > Visual Studio Tools > Командная строка разработчика для VS 2017
 ```
+Скрипт для инициализации рабочего окружения и запуска папки проекта в VS Code
+```
+call "D:\Programs\Microsoft Visual Studio\2017\Community\Common7\Tools\VsDevCmd.bat"
+c:
+cd "C:\Users\<user>\Desktop\my-proj"
+code .
+```
+
 Все установленные переменные рабочего окружения можно посмотреть командой
 ```cmd
 set
