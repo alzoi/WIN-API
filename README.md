@@ -286,11 +286,20 @@ D:\Programs\Microsoft Visual Studio\2017\Community\Common7\Tools\VsDevCmd.bat
 Пуск > Все программы > Visual Studio 2017 > Visual Studio Tools > Командная строка разработчика для VS 2017
 ```
 Скрипт для инициализации рабочего окружения и запуска папки проекта в VS Code
-```
+```cmd
 call "D:\Programs\Microsoft Visual Studio\2017\Community\Common7\Tools\VsDevCmd.bat"
 c:
 cd "C:\Users\<user>\Desktop\my-proj"
 code .
+```
+Можно создать файл сборки make.bat который будет запускать сборку проекта и сохранять результат в папке ./build/
+```cmd
+cd ./build
+cl ../hello.cpp
+```
+Запуск сборки
+```cmd
+sh make.bat
 ```
 
 Все установленные переменные рабочего окружения можно посмотреть командой
