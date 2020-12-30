@@ -289,7 +289,7 @@ D:\Programs\Microsoft Visual Studio\2017\Community\Common7\Tools\VsDevCmd.bat
 ```cmd
 call "D:\Programs\Microsoft Visual Studio\2017\Community\Common7\Tools\VsDevCmd.bat"
 c:
-cd %userprofile%\my-proj"
+cd /D %userprofile%\my-proj"
 code .
 ```
 Можно создать файл сборки make.bat который будет запускать сборку проекта и сохранять результат в папке ./build/
