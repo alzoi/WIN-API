@@ -330,14 +330,12 @@ all: main.exe
 
 main.exe: main.obj
   $(LD) $(LDFLAGS) main.obj $(LIBS) /OUT:main.exe
-  echo linked...
-
+  
 main.obj: main.cpp
   mkdir -p $(BUILD)
   cd $(BUILD)
   $(CC) $(CFLAGS) ../main.cpp
-  echo compiled...
-
+  
 cls:   
   rm -r $(BUILD)
 ```
