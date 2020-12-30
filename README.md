@@ -313,6 +313,31 @@ set
 https://rsdn.org/article/cpp/crt.xml  
 http://bytepointer.com/resources/pietrek_libctiny_2001.htm  
 
+# Сборка в Windows с помощью Makefile
+```Makefile
+BUILD   = ./build
+CC      = cl
+CFLAGS  = -nologo -EHsc -MT -c
+LD      = link
+LDFLAGS = -nologo
+LIBS    = 
+
+all: main.exe
+
+main.exe: main.obj
+  $(LD) $(LDFLAGS) main.obj $(LIBS) /OUT:main.exe
+  echo linked...
+
+main.obj: main.cpp
+  mkdir -p $(BUILD)
+  cd $(BUILD)
+  $(CC) $(CFLAGS) ../main.cpp
+  echo compiled...
+
+cls:   
+  rm -r $(BUILD)
+```
+
 ## Cmder  
 Использование эмулятора терминала [Cmder](https://cmder.net/) в качестве командной строки разработчика для Visual Studio  
 [medium.com/@ricardoserradas/how-to-use-cmder](https://medium.com/@ricardoserradas/how-to-use-cmder-as-the-developer-command-prompt-for-visual-studio-bcc54a99fc9d)  
