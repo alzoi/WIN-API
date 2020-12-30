@@ -315,13 +315,17 @@ http://bytepointer.com/resources/pietrek_libctiny_2001.htm
 
 # Сборка в Windows с помощью Makefile
 ```Makefile
+# Папка для сборки проекта.
 BUILD   = ./build
+
+# Средства сборки и опции .
 CC      = cl
 CFLAGS  = -nologo -EHsc -MT -c
 LD      = link
 LDFLAGS = -nologo
 LIBS    = 
 
+# Цели сборки.
 all: main.exe
 
 main.exe: main.obj
@@ -336,6 +340,10 @@ main.obj: main.cpp
 
 cls:   
   rm -r $(BUILD)
+```
+Запуск
+```cmd
+nmake -nologo all
 ```
 
 ## Cmder  
