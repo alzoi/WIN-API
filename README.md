@@ -337,7 +337,7 @@ main.obj: main.cpp
   $(CC) $(CFLAGS) ../main.cpp
   
 cls:   
-  rm -r $(BUILD)
+  rm -rf $(BUILD)
 ```
 Запуск
 ```cmd
