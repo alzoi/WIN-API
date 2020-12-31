@@ -27,6 +27,9 @@ http://www.catch22.net/tuts/win32/custom-controls
 https://www.youtube.com/watch?v=bg4AnVmv4yI&list=PLGbRAGKfBgdVUAsLxzRcdhz838PtfwJu9  
 http://dims.karelia.ru/win32/  
 
+## Пакетный менеджер
+[vcpkg — это диспетчер пакетов на базе командной строки для C++](https://docs.microsoft.com/ru-ru/cpp/build/vcpkg?view=msvc-160)  
+
 ## Компоненты пользовательского интерфейса
 https://docs.microsoft.com/en-us/windows/desktop/controls/individual-control-info  
 
