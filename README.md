@@ -51,7 +51,8 @@ https://docs.microsoft.com/ru-ru/cpp/c-runtime-library/security-features-in-the-
 
 ## GUI
 ### wxwidgets
-https://www.youtube.com/watch?v=sRhoZcNpMb4
+https://www.youtube.com/watch?v=sRhoZcNpMb4  
+https://en.wikipedia.org/wiki/List_of_platform-independent_GUI_libraries  
 
 ## История GUI SAP
 https://sap.sd/category/sap
