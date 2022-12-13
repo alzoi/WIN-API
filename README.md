@@ -18,7 +18,7 @@ https://docs.microsoft.com/ru-ru/cpp/windows/desktop-applications-visual-cpp?vie
 https://docs.microsoft.com/en-us/windows/desktop/learnwin32/your-first-windows-program  
 http://www.charlespetzold.com/books.html  
 http://www.charlespetzold.com/pw5/index.html  
-http://www.firststeps.ru/mfc/winapi/hook/hook1.html
+http://www.firststeps.ru/mfc/winapi/hook/hook1.html  
 https://www.codeproject.com/Articles/559385/Custom-Controls-in-Win-API-The-Basics  
 http://old-dos.ru/index.php?page=files&mode=files&do=show&id=1493  
 http://mdb-blog.blogspot.com/2010/11/microsoft-spy-or-spyxx-for-download.html  
