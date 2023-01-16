@@ -36,6 +36,8 @@ https://docs.microsoft.com/en-us/windows/desktop/controls/individual-control-inf
 ## Отладка
 ### Утилиты для исследования Windows
 https://docs.microsoft.com/en-us/sysinternals/  
+https://github.com/nptr/msstyleEditor  
+
 ### Отладка в Linux  
 Valgrind - инструментальное программное обеспечение, предназначенное для отладки использования памяти, обнаружения утечек памяти
 http://www.valgrind.org/  
