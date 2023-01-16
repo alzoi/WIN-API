@@ -35,6 +35,7 @@ https://docs.microsoft.com/en-us/windows/desktop/controls/individual-control-inf
 
 ## Отладка
 ### Утилиты для исследования Windows
+[Spy++](http://mdb-blog.blogspot.com/2010/11/microsoft-spy-or-spyxx-for-download.html)  
 https://docs.microsoft.com/en-us/sysinternals/  
 https://github.com/nptr/msstyleEditor  
 [Winspector](http://web.archive.org/web/20090916053057/http://www.windows-spy.com/)  
