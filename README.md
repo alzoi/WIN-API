@@ -38,6 +38,7 @@ https://docs.microsoft.com/en-us/windows/desktop/controls/individual-control-inf
 [Spy++](http://mdb-blog.blogspot.com/2010/11/microsoft-spy-or-spyxx-for-download.html)  
 [Using Spy++](https://learn.microsoft.com/en-us/visualstudio/debugger/using-spy-increment)  
 [Control Spy 2.0](https://www.microsoft.com/en-us/download/confirmation.aspx?id=4635)  
+[Theme-explorer](https://github.com/mity/theme-explorer/releases)  
 [Использование Control Spy 2.0](https://learn.microsoft.com/en-us/windows/win32/controls/control-spy)  
 https://docs.microsoft.com/en-us/sysinternals/  
 https://github.com/nptr/msstyleEditor  
