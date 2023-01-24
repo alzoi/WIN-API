@@ -7,6 +7,7 @@ https://www-user.tu-chemnitz.de/~heha/petzold/content.htm
 
 # Чистый Win32 API (pure Win32 API)
 http://zetcode.com/gui/winapi/  
+http://www.winprog.org/tutorial/  
 https://www.codeproject.com/KB/dialog/  
 
 ## Ссылки 
