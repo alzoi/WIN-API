@@ -10,6 +10,8 @@ https://www-user.tu-chemnitz.de/~heha/petzold/content.htm
 http://zetcode.com/gui/winapi/  
 http://www.winprog.org/tutorial/  
 https://www.codeproject.com/KB/dialog/  
+
+# Тема для оконных элементов
 https://www.transmissionzero.co.uk/computing/win32-apps-with-mingw/  
 
 # Локальная установка MSBuild
