@@ -1,6 +1,7 @@
 # Win32 API
 https://docs.microsoft.com/en-us/windows/win32/learnwin32/learn-to-program-for-windows
 https://docs.microsoft.com/ru-ru/windows/desktop/apiindex/windows-api-list  
+https://learn.microsoft.com/en-us/windows/win32/controls/individual-control-info  
 https://docs.microsoft.com/en-us/windows/desktop/api/  
 https://www-user.tu-chemnitz.de/~heha/petzold/petzold.htm  
 https://www-user.tu-chemnitz.de/~heha/petzold/content.htm  
