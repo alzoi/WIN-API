@@ -13,7 +13,7 @@ https://www.codeproject.com/KB/dialog/
 
 # Тема для оконных элементов
 https://www.transmissionzero.co.uk/computing/win32-apps-with-mingw/  
-(https://learn.microsoft.com/en-us/windows/win32/controls/cookbook-overview#using-comctl32dll-version-6-in-an-application-that-uses-only-standard-extensions)[https://learn.microsoft.com]  
+[https://learn.microsoft.com](https://learn.microsoft.com/en-us/windows/win32/controls/cookbook-overview#using-comctl32dll-version-6-in-an-application-that-uses-only-standard-extensions)
 
 # Локальная установка MSBuild
 https://learn.microsoft.com/ru-ru/visualstudio/msbuild/msbuild?view=vs-2022
