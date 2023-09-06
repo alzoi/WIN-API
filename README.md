@@ -11,6 +11,14 @@ http://www.winprog.org/tutorial/
 https://www.codeproject.com/KB/dialog/  
 https://www.transmissionzero.co.uk/computing/win32-apps-with-mingw/  
 
+# Локальная установка MSBuild
+https://learn.microsoft.com/ru-ru/visualstudio/msbuild/msbuild?view=vs-2022
+Microsoft Build Engine представляет собой платформу для сборки приложений. Компонент MSBuild обеспечивает для файла проекта схему XML, определяющую способы, используемые платформой сборки для обработки и сборки приложений.
+Для скачивания пакета MSBuild необходимо ввести команду
+```
+C:\Downloads\vs_BuildTools\vs_setup_bootstrapper.exe --add Microsoft.VisualStudio.Workload.MSBuildTools --layout c:\offlineBuildTool --lang en-us
+```
+
 ## Ссылки 
 https://docs.microsoft.com/ru-ru/cpp/cpp/cpp-language-reference?view=vs-2019  
 https://docs.microsoft.com/ru-ru/cpp/?view=vs-2019  
