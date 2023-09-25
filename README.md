@@ -87,12 +87,14 @@ https://sap.sd/category/sap
 ## GDI (Graphics Device Interface)
 https://docs.microsoft.com/ru-ru/windows/desktop/gdi/windows-gdi  
 
-
 ## GDI+
 https://docs.microsoft.com/en-us/windows/desktop/api/_gdiplus/  
 
 ## Direct2D
 https://docs.microsoft.com/ru-ru/windows/desktop/learnwin32/your-first-direct2d-program  
+
+## Примеры
+https://github.com/StrictlyDominick/win32Calculator  
 
 ## Кодировка
 https://docs.microsoft.com/ru-ru/windows/desktop/learnwin32/working-with-strings  
