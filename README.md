@@ -78,6 +78,7 @@ https://gnuwin32.sourceforge.net/
 ### wxwidgets
 https://www.youtube.com/watch?v=sRhoZcNpMb4  
 https://en.wikipedia.org/wiki/List_of_platform-independent_GUI_libraries  
+https://www.devxperiences.com/pzwp1/2023/06/10/wxwidgets-on-linux/  
 ### nappgui
 https://nappgui.com  
 
