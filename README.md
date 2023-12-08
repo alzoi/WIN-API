@@ -75,6 +75,7 @@ https://docs.microsoft.com/ru-ru/cpp/c-runtime-library/security-features-in-the-
 https://gnuwin32.sourceforge.net/  
 
 ## GUI
+
 ### Список наборов виджетов (widget toolkits)
 https://en.wikipedia.org/wiki/List_of_widget_toolkits  
 
