@@ -92,6 +92,9 @@ https://www.devxperiences.com/pzwp1/2023/06/10/wxwidgets-on-linux/
 ### nappgui
 https://nappgui.com  
 
+## LVGL
+https://lvgl.io/  
+
 ## История GUI SAP
 https://sap.sd/category/sap
 
