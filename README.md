@@ -10,6 +10,9 @@ https://www-user.tu-chemnitz.de/~heha/petzold/content.htm
 http://zetcode.com/gui/winapi/  
 http://www.winprog.org/tutorial/  
 https://www.codeproject.com/KB/dialog/  
+https://github.com/hyperdregon/SimpleWinAPI/wiki  
+https://www.codeproject.com/Articles/38168/Win32-SDK-Data-Grid-View-Made-Easy  
+
 
 # Тема для оконных элементов
 https://www.transmissionzero.co.uk/computing/win32-apps-with-mingw/  
