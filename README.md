@@ -8,6 +8,7 @@ https://www-user.tu-chemnitz.de/~heha/petzold/content.htm
 
 # Чистый Win32 API (pure Win32 API)
 https://learn.microsoft.com/en-us/windows/win32/desktop-programming  
+https://learn.microsoft.com/en-us/windows/win32/controls/user-controls-intro  
 https://github.com/MicrosoftDocs/win32/blob/docs/desktop-src/desktop-programming.md  
 http://zetcode.com/gui/winapi/  
 http://www.winprog.org/tutorial/  
