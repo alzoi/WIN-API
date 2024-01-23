@@ -17,7 +17,7 @@ http://www.winprog.org/tutorial/
 https://www.codeproject.com/KB/dialog/  
 https://github.com/hyperdregon/SimpleWinAPI/wiki  
 https://www.codeproject.com/Articles/38168/Win32-SDK-Data-Grid-View-Made-Easy  
-
+https://habr.com/ru/articles/779092/  
 
 # Тема для оконных элементов
 https://www.transmissionzero.co.uk/computing/win32-apps-with-mingw/  
